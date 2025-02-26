@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
 import { useEffect } from "react";
 import "react-toastify/dist/ReactToastify.css";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 function App() {
   useEffect(() => {
@@ -23,6 +25,8 @@ function App() {
         <ToastContainer />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>
       </div>
     </Router>
